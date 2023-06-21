@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transactions",
+  "info": {
+    "singularName": "transaction",
+    "pluralName": "transactions",
+    "displayName": "Transaction"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": false
+    },
+    "amount": {
+      "type": "decimal",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "NORMAL",
+        "INVEST",
+        "ECONOMIEs"
+      ],
+      "required": true,
+      "default": "NORMAL"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "FOOD",
+        "SHOPPING",
+        "TRAVEL",
+        "BILLS",
+        "ENTERTAINMENT",
+        "HEALTH",
+        "EDUCATION",
+        "GIFTS",
+        "UTILITIES",
+        "OTHER"
+      ],
+      "default": "OTHER",
+      "required": true
+    }
+  }
+}
