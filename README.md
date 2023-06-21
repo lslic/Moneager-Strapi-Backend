@@ -1,4 +1,4 @@
-# My Strapi Application
+# Moneager Backend Application
 
 This is a Money Management application built with Strapi, React Native, Expo, and GraphQL.
 
